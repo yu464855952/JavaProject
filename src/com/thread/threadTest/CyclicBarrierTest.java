@@ -1,10 +1,6 @@
 package com.thread.threadTest;
 
 
-import jdk.internal.org.objectweb.asm.tree.IntInsnNode;
-
-import javax.xml.transform.Source;
-import java.util.Random;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.ExecutorService;
