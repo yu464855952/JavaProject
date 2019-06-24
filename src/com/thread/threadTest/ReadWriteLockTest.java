@@ -14,6 +14,7 @@ public class ReadWriteLockTest {
         final QueueData queue = new QueueData();
         for (int i=1;i<=3;i++){
             new Thread(){
+                @Override
                 public void run(){
                     while (true){
                         queue.get();
@@ -22,6 +23,7 @@ public class ReadWriteLockTest {
             }.start();
 
             new Thread(){
+                @Override
                 public void run(){
                     while (true){
                         queue.put(new Random().nextInt(10000));
