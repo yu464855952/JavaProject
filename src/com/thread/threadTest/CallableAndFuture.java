@@ -1,7 +1,5 @@
 package com.thread.threadTest;
 
-import org.omg.CORBA.INTERNAL;
-
 import java.util.Random;
 import java.util.concurrent.*;
 
@@ -12,6 +10,7 @@ public class CallableAndFuture {
         //Callable采用ExecutorService的submit方法提交,返回的future对象可以取消任务
         Future<String> future = threadPool.submit(
             new Callable<String>() {
+                @Override
                 public String call() throws Exception{
                     Thread.sleep(200);
                     return "hello";

@@ -1,8 +1,6 @@
 package com.thread.threadTest;
 
 
-import sun.awt.SunHints;
-
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

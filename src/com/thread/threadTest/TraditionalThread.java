@@ -20,7 +20,7 @@ public class TraditionalThread {
                 }
             }
         };
-        thread.start();
+//        thread.start();
         /**
          * 实现runnable接口,重写run方法
          */
@@ -41,7 +41,7 @@ public class TraditionalThread {
                 }
             }
         }){};
-        threadtest.start();
+//        threadtest.start();
 
         /**
          * new Thread(runnable.run){run}.start()
